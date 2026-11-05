@@ -102,7 +102,9 @@ class _ListPageState extends State<ListPage> {
             ),
             const SizedBox(height: 2),
             Text(
-              _lastAction == null ? '已显示 $_visible 本' : '上次操作：$_lastAction',
+              _lastAction == null
+                  ? '已显示 ${_visible < books.length ? _visible : books.length} 本'
+                  : '上次操作：$_lastAction',
               style: const TextStyle(fontSize: 12, color: Color(0xFF8A93A6)),
             ),
           ],
