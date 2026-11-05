@@ -51,5 +51,6 @@ chore: flutter create app_skeleton 初始工程（含 books.json 与 Book 模型
 feat: list page with builder（懒构建列表 + 加载更多每次追加 20 条）
 feat: named routes & typed arguments（4 条命名路由、Book 参数与回传筛选值）
 test: widget tests for paging & pop-with-value
+fix: 列表副标题显示实际条数
 docs: README、进度报告与截图目录
 ```
