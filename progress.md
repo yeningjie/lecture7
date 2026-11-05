@@ -148,7 +148,7 @@ if (result != null && mounted) {
 
 2. 详情参数正确——已完成。以《活着》（id 1、余华、文学、1990 年、31 次）为例，详情页显示的编号、作者、分类、出版年份、借阅次数与简介与 assets/books.json 中该记录逐项一致，标题与列表项相同。证据：detail.png。
 
-3. 回传值生效——已完成两处：① 详情页“借阅并回传”把“已借阅《活着》”带回列表页 AppBar 副标题（back_value.png）；② 列表页长按弹出“仅看高借阅量（借阅次数 ≥ 50）”，选择后列表页整体 pop 回首页，首页 AppBar 副标题变为“筛选：仅看高借阅量”（filter_back.png）。
+3. 回传值生效——已完成两处：① 详情页“借阅并回传”把“已借阅《活着》”带回列表页 AppBar 副标题（back_value.png）；② 列表页长按弹出“仅看高借阅量（借阅次数 ≥ 50）”筛选层（filter_sheet.png），选择后列表页整体 pop 回首页，首页 AppBar 副标题变为“筛选：仅看高借阅量”（filter_back.png）。
 
 4. 命名路由与懒构建——已完成：命名路由 4 条（≥4）；ListView.builder 每页 20 条、“加载更多”每次 +20（list.png、load_more.png）；运行期控制台无路由异常与溢出告警。
 
@@ -215,9 +215,13 @@ if (result != null && mounted) {
 
 详情页“借阅并回传”后回到列表页，AppBar 副标题显示“上次操作：已借阅《活着》”。
 
+![filter_sheet.png](docs/screenshots/filter_sheet.png)
+
+列表页长按列表项弹出的筛选层：仅看高借阅量（借阅次数 ≥ 50）。
+
 ![filter_back.png](docs/screenshots/filter_back.png)
 
-列表页长按选择“仅看高借阅量”后回到首页，AppBar 副标题显示“筛选：仅看高借阅量”。
+选择“仅看高借阅量”后回到首页，AppBar 副标题显示“筛选：仅看高借阅量”。
 
 ![about.png](docs/screenshots/about.png)
 
@@ -249,7 +253,7 @@ git log --oneline --graph --decorate --all：各步骤提交与远程同步情�
 
 - README 与独立仓库 lecture7——已完成；
 
-- 证据截图（运行 + flutter doctor + Git 记录）——已完成 9 张；
+- 证据截图（运行 + flutter doctor + Git 记录）——已完成（见第八节）；
 
 - 独立研究任务（选做）——未做：CustomScrollView/Sliver 重写、路由守卫、自定义转场计划课后补。
 
